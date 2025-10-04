@@ -15,7 +15,7 @@ const tournaments = [
     date: "21 de Octubre",
     color: "from-green-500 to-emerald-600",
     image:
-      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500&h=300&fit=crop",
+      "https://http2.mlstatic.com/D_NQ_NP_711998-MLA70176897050_062023-O.webp",
   },
   {
     game: "FIFA PS4",
@@ -24,8 +24,7 @@ const tournaments = [
     players: 16,
     date: "21 de Octubre",
     color: "from-blue-600 to-indigo-700",
-    image:
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&h=300&fit=crop",
+    image: "https://gamescenter.pe/wp-content/uploads/2024/08/FIFA-22-PS4.jpg",
   },
   {
     game: "Clash Royale",
@@ -35,7 +34,7 @@ const tournaments = [
     date: "21 de Octubre",
     color: "from-blue-500 to-cyan-600",
     image:
-      "https://images.unsplash.com/photo-1556438758-8d49568ce18e?w=500&h=300&fit=crop",
+      "https://assetsio.gnwcdn.com/eurogamer-x8sbgo.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
   },
   {
     game: "Dragon Ball BT3",
@@ -45,7 +44,7 @@ const tournaments = [
     date: "21 de Octubre",
     color: "from-orange-500 to-red-600",
     image:
-      "https://images.unsplash.com/photo-1628277613967-6abca504d0ac?w=500&h=300&fit=crop",
+      "https://archive.org/services/img/dragon-ball-z-budokai-tenkaichi-3-au-eu-jp-us-2007-versus-fighting-iso-ps-2",
   },
   {
     game: "UNO",
@@ -54,8 +53,7 @@ const tournaments = [
     players: 30,
     date: "21 de Octubre",
     color: "from-red-500 to-pink-600",
-    image:
-      "https://images.unsplash.com/photo-1611371805429-8b5c1b2c34ba?w=500&h=300&fit=crop",
+    image: "https://m.media-amazon.com/images/I/71MrrNB7jCL._AC_SL1500_.jpg",
   },
 ];
 
@@ -89,13 +87,34 @@ export function TournamentsSection() {
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -10 }}
             >
-              <Card className="relative overflow-hidden bg-card border-border hover:border-neon-purple/50 transition-all duration-300 hover:glow-purple h-full">
+              <Card
+                key={index}
+                className="overflow-hidden bg-gradient-to-br from-gamer-dark/50 to-gamer-dark/30 border-gamer-purple/30 hover:border-gamer-purple transition-all duration-300 group"
+              >
                 <div className={`h-2 bg-gradient-to-r ${tournament.color}`} />
-                <div className="p-6 space-y-4">
-                  <div className="space-y-2">
-                    <Trophy className="w-10 h-10 text-neon-purple" />
-                    <h3 className="text-2xl font-bold">{tournament.game}</h3>
+
+                {/* Tournament Image */}
+                <div className="relative w-full h-48 overflow-hidden bg-gamer-dark/80">
+                  <Image
+                    src={tournament.image}
+                    alt={tournament.game}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gamer-dark via-gamer-dark/50 to-transparent opacity-60" />
+                </div>
+
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <Trophy className="w-8 h-8 text-gamer-purple" />
+                    <span className="text-sm text-gamer-cyan font-semibold">
+                      Cupos limitados
+                    </span>
                   </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white drop-shadow-[0_0_10px_rgba(168,85,247,0.5)]">
+                    {tournament.game}
+                  </h3>
 
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">

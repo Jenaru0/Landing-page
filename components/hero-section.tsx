@@ -284,7 +284,7 @@ export function HeroSection() {
                       }}
                       className="text-4xl sm:text-5xl font-black text-neon-purple text-glow-purple"
                     >
-                      S/ 3.00
+                      S/ 5.00
                     </motion.p>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ const steps = [
   {
     icon: CreditCard,
     title: "Realiza el Pago",
-    description: 'Envía S/ 3.00 con la referencia "Rifa VIII Ciclo"',
+    description: 'Envía S/ 5.00 con la referencia "Rifa VIII Ciclo"',
     color: "text-gamer-cyan",
   },
   {

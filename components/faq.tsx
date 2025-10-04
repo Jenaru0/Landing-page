@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "¿Cómo compro un ticket para la rifa?",
     answer:
-      'Escanea el código QR con tu app de Yape, envía S/ 3.00 con la referencia "Rifa VIII Ciclo" y guarda tu comprobante. Ese será tu ticket de participación.',
+      'Escanea el código QR con tu app de Yape, envía S/ 5.00 con la referencia "Rifa VIII Ciclo" y guarda tu comprobante. Ese será tu ticket de participación.',
   },
   {
     question: "¿Cuándo y dónde será el sorteo?",

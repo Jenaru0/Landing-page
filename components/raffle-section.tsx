@@ -28,7 +28,7 @@ const prizes = [
     name: "Gift Cards",
     icon: Gift,
     image:
-      "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=500&fit=crop",
+      "https://read.cardtonic.com/wp-content/uploads/2024/08/Giftcards-100.jpg",
   },
   {
     name: "Accesorios Tech",
@@ -106,7 +106,7 @@ export function RaffleSection() {
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground">Precio del Ticket</p>
-              <p className="text-3xl font-bold text-action-green">S/ 3.00</p>
+              <p className="text-3xl font-bold text-action-green">S/ 5.00</p>
             </div>
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground">Fecha del Sorteo</p>
